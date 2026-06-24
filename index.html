@@ -79,7 +79,8 @@
     </div>
 
     <script>
-        const urlGitHub = 'https://raw.githubusercontent.com/rdcaruci1530/prueba/refs/heads/master/estilo.md';
+        // El 'Date.now()' añade un número único al final que destruye el caché
+const urlGitHub = 'https://raw.githubusercontent.com/rdcaruci1530/prueba/refs/heads/master/estilo.md?t=' + Date.now();
 
         async function obtenerMarkdown() {
             try {
